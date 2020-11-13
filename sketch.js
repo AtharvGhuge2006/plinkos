@@ -1,4 +1,5 @@
 
+
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -38,10 +39,17 @@ function draw() {
      for (var j = 0; j < particles.length; j++) 
   { particles[j].display(); }
 
+
+  
+
 ground.display()
 wall_right.display()
 wall_left.display()
 top_wall.display()
+divisions.push(new Division(j,650,10,100));  
+for (var d = 0; d <divisions.length; d++)
+
+  { divisions[d].display(); }
 drawSprites();
 }
 
